@@ -8,7 +8,8 @@
         "url": "git+https://github.com/joaquimsn/analytics-helper.git"
     },
     "author": "",
-    "contributors": [{
+    "contributors": [
+        {
             "name": "Bruno Munhoz",
             "email": "bpm1993@gmail.com"
         },
@@ -29,10 +30,22 @@
     "nyc": {
         "check-coverage": true,
         "per-file": true,
-        "lines": [80, 99],
-        "statements": [90, 99],
-        "functions": [90, 99],
-        "branches": [80, 99],
+        "lines": [
+            80,
+            99
+        ],
+        "statements": [
+            90,
+            99
+        ],
+        "functions": [
+            90,
+            99
+        ],
+        "branches": [
+            80,
+            99
+        ],
         "exclude": [
             "build",
             "documentation-images"
@@ -54,10 +67,18 @@
         "instrument": false
     },
     "release": {
-        "verifyConditions": ["@semantic-release/github"],
-        "publish": ["@semantic-release/github"],
-        "success": ["@semantic-release/github"],
-        "fail": ["@semantic-release/github"]
+        "verifyConditions": [
+            "@semantic-release/github"
+        ],
+        "publish": [
+            "@semantic-release/github"
+        ],
+        "success": [
+            "@semantic-release/github"
+        ],
+        "fail": [
+            "@semantic-release/github"
+        ]
     },
     "devDependencies": {
         "@babel/cli": "^7.0.0",
@@ -68,11 +89,13 @@
         "chai": "^4.1.2",
         "coveralls": "^3.0.2",
         "cross-env": "^5.2.0",
+        "del": "^3.0.0",
         "gulp": "^3.9.1",
         "gulp-beautify": "^2.0.1",
         "gulp-concat": "^2.6.1",
         "gulp-include": "^2.3.1",
         "gulp-minify": "^2.1.0",
+        "gulp-replace": "^1.0.0",
         "gulp-strip-comments": "^2.5.2",
         "gulp-sync": "^0.1.4",
         "gulp-uglify": "^3.0.0",

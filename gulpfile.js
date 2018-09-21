@@ -8,12 +8,15 @@ var gulpsync = require('gulp-sync')(gulp);
 var strip = require('gulp-strip-comments');
 var minify = require('gulp-minify');
 var del = require('del');
+var replace = require('gulp-replace');
 
 gulp.task('gtm-modules', function() {
     return gulp.src(['./core/modules/*.js', './gtm/modules/*js'])
+        .pipe(replace(/module.exports\s*=\s*[a-zA-Z]+;/g, ''))
         .pipe(concat('gtm-modules.js'))
         .pipe(beautify({
-            indent_size: 2
+            indent_size: 2,
+            max_preserve_newlines: 2
         }))
         .pipe(strip())
         .on('error', console.log)
@@ -22,6 +25,7 @@ gulp.task('gtm-modules', function() {
 
 gulp.task('build-gtm', function() {
     return gulp.src('./gtm/main.js')
+        .pipe(replace(/module.exports\s*=\s*[a-zA-Z]+;/g, ''))
         .pipe(include({
             hardFail: true,
             includePaths: [
