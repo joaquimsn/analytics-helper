@@ -2,7 +2,7 @@ dist: trusty
 sudo: required
 
 node_js:
-  - 6
+  - 8.11.2
 
 addons:
   sonarcloud:
@@ -21,3 +21,9 @@ script:
   gulp
 
 after_success: npm run coverage
+
+deploy:
+  provider: script
+  skip_cleanup: true
+  script:
+    - npx semantic-release
