@@ -5,7 +5,7 @@
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DP6/analytics-helper.git"
+        "url": "git+https://github.com/joaquimsn/analytics-helper.git"
     },
     "author": "",
     "contributors": [{
@@ -19,9 +19,9 @@
     ],
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/DP6/analytics-helper/issues"
+        "url": "https://github.com/joaquimsn/analytics-helper/issues"
     },
-    "homepage": "https://github.com/DP6/analytics-helper#readme",
+    "homepage": "https://github.com/joaquimsn/analytics-helper#readme",
     "scripts": {
         "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text-summary --reporter=text  mocha test/index.test.js",
         "coverage": "nyc report --reporter=text-lcov | coveralls"
