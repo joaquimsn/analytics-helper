@@ -12,7 +12,7 @@ var replace = require('gulp-replace');
 
 gulp.task('gtm-modules', function() {
     return gulp.src(['./core/modules/*.js', './gtm/modules/*js'])
-        .pipe(replace(/module.exports\s*=\s*[a-zA-Z]+;/g, ''))
+        .pipe(replace(/module.exports[a-z-A-Z.]*\s*=\s*([a-zA-Z\-_]+;|([a-zA-Z\-_:.={},\n\s]+);+)/g, ''))
         .pipe(concat('gtm-modules.js'))
         .pipe(beautify({
             indent_size: 2,

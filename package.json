@@ -8,8 +8,7 @@
         "url": "git+https://github.com/joaquimsn/analytics-helper.git"
     },
     "author": "",
-    "contributors": [
-        {
+    "contributors": [{
             "name": "Bruno Munhoz",
             "email": "bpm1993@gmail.com"
         },
@@ -71,6 +70,9 @@
             "@semantic-release/github"
         ],
         "publish": [
+            "@semantic-release/github"
+        ],
+        "prepare": [
             "@semantic-release/github"
         ],
         "success": [
