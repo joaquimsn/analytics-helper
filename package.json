@@ -66,6 +66,7 @@
         "instrument": false
     },
     "release": {
+        "branch": "master",
         "verifyConditions": [
             "@semantic-release/github"
         ],
