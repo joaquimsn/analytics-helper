@@ -72,9 +72,7 @@
         "publish": [
             "@semantic-release/github"
         ],
-        "prepare": [
-            "@semantic-release/github"
-        ],
+        "prepare": [],
         "success": [
             "@semantic-release/github"
         ],
