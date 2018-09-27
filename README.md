@@ -15,7 +15,6 @@ Resumindo, o utilize o Analytics Helper para:
 ### Estendendo o Analytics Helper
 Um dos principais conceitos do Helper é a manutenção de sua API com o versionamento básico [SemVer](https://semver.org/). Para isso, recomendamos que a expansão de sua API para situações específicas, ou seja, utilizadas em projetos com particularidades que não irão se repetir, seja feita através do objeto `fn`.
 
-
 #### Objeto `fn`
 Se trata de uma variável global dentro do escopo do objeto Helper, visando agrupar as funções que não pertencem ao escopo atual do projeto.
 ```javascript
