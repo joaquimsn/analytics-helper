@@ -24,7 +24,6 @@ analyticsHelper.fn.minhaFuncao = function (name) {
 };
 analyticsHelper.fn.minhaFuncao('DP6'); // DP6
 ```
-
 ### Compatibilidade
 
 O Analytics Helper depende da função nativa `querySelectorAll`. Os navegadores com suporte a essa funcionalidade são:
