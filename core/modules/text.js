@@ -15,7 +15,7 @@
           text = elm.innerText || elm.textContent || elm.innerHTML.replace(/<[^>]+>/g, '');
       }
 
-      return opt.sanitize ? sanitize(text, opts.sanitize) : text;
+      return opt.sanitize ? sanitize(text, opt.sanitize) : text;
   }
 
 
