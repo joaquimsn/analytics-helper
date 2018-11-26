@@ -2,3 +2,4 @@
 
 require('./core/modules/sanitize.test.js');
 require('./core/modules/has.test.js');
+require('./core/modules/text.test.js');
