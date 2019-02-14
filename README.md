@@ -31,7 +31,6 @@ O Analytics Helper depende da função nativa `querySelectorAll`. Os navegadores
 |--------|---------|----|-------|--------|
 |      1 |     3.5 |  8 |    10 |    3.2 |
 
-
 ## Tag Managers
 
 Inicialmente, na versão 1.0, a biblioteca dá suporte para o Google Tag Manager com envio de dados para o Google Analytics, mas está planejado o suporte para demais ferramentas do mercado também.
