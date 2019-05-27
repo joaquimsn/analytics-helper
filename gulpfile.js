@@ -4,9 +4,7 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var beautify = require('gulp-beautify');
 var include = require('gulp-include');
-var gulpsync = require('gulp-sync')(gulp);
 var strip = require('gulp-strip-comments');
-var minify = require('gulp-minify');
 var del = require('del');
 var replace = require('gulp-replace');
 
