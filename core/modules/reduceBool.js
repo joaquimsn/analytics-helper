@@ -6,3 +6,4 @@ function reduceBool(arr) {
 }
 
 module.exports = reduceBool;
+

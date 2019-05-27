@@ -41,4 +41,4 @@ gulp.task('clean', function() {
     return del(['./tmp']);
 });
 
-gulp.task('default', gulpsync.sync(['gtm-modules', 'build-gtm', 'clean']));
+gulp.task('default', gulp.series(['clean', 'gtm-modules', 'build-gtm', 'clean']));
