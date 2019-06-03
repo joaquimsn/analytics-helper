@@ -5,24 +5,31 @@
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DP6/analytics-helper.git"
+        "url": "git+https://github.com/joaquimsn/analytics-helper.git"
     },
     "author": "",
-    "contributors": [
-        {
+    "contributors": [{
             "name": "Bruno Munhoz",
             "email": "bpm1993@gmail.com"
         },
         {
             "name": "Paulo Brumatti",
             "email": "paulo8624@gmail.com"
+        },
+        {
+            "name": "Joaquim Neto",
+            "email": "jsn.piata@gmail.com"
+        },
+        {
+            "name": "Nicolas Ibanheiz",
+            "email": "nicolas.ibanheiz@dp6.com.br"
         }
     ],
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/DP6/analytics-helper/issues"
+        "url": "https://github.com/joaquimsn/analytics-helper/issues"
     },
-    "homepage": "https://github.com/DP6/analytics-helper#readme",
+    "homepage": "https://github.com/joaquimsn/analytics-helper#readme",
     "scripts": {
         "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text-summary --reporter=text  mocha test/index.test.js",
         "coverage": "nyc report --reporter=text-lcov | coveralls"
@@ -84,8 +91,8 @@
     },
     "devDependencies": {
         "@babel/cli": "^7.0.0",
-        "@babel/core": "^7.0.1",
-        "@babel/preset-env": "^7.0.0",
+        "@babel/core": "^7.4.5",
+        "@babel/preset-env": "^7.4.5",
         "@babel/register": "^7.0.0",
         "babel-plugin-istanbul": "^5.0.1",
         "chai": "^4.1.2",
@@ -102,9 +109,10 @@
         "gulp-replace": "^1.0.0",
         "gulp-strip-comments": "^2.5.2",
         "gulp-uglify": "^3.0.0",
-        "jsdom": "^13.0.0",
+        "http-server": "^0.11.1",
         "mocha": "^5.2.0",
         "nyc": "^13.0.1",
+        "puppeteer": "^1.17.0",
         "sonarqube-scanner": "^2.1.1"
     },
     "dependencies": {},
